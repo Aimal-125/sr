@@ -7,9 +7,16 @@
 	box-sizing: border-box;
 	transition: all 0.3s;
 }
+.circlebox {
+	width: 150px;
+	height: 150px;
+}
 .circle {
 	box-shadow: 1px 1px 8px 1px black;
 	animation: myanime 0.8s 1s infinite linear;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
 }
 @keyframes myanime {
 	0% {
@@ -45,13 +52,10 @@
 		height: 40%;
 	}
 	.circle {
-		width: 100px;
-		height: 100px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
 		background: linear-gradient(hsla(256, 72%, 46%, 0.8), hsla(241, 72%, 46%, 0.5));
 	}
 	.text1 {
@@ -210,10 +214,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
 		background: linear-gradient(hsla(256, 72%, 46%, 0.8), hsla(241, 72%, 46%, 0.5));
-		width: 150px;
-		height: 150px;
 		color: lightgray;
 		text-shadow: 1px 1px 2px black;
 	}
@@ -295,5 +296,11 @@
 		border-radius: 20px;
 		width: 100%;
 		margin: 0 auto;
+	}
+}
+
+@media screen and (max-height: 500px) {
+	.circle {
+		border-radius: 0;
 	}
 }
