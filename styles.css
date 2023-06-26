@@ -72,6 +72,9 @@
 		font-size: 14px;
 		font-weight: 500;
 	}
+	.hd {
+		font-size: 60px;
+	}
 	#avg {
 		color: white;
 	}
