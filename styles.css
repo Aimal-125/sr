@@ -57,6 +57,7 @@
 		align-items: center;
 		justify-content: center;
 		background: linear-gradient(hsla(256, 72%, 46%, 0.8), hsla(241, 72%, 46%, 0.5));
+		border-radius: 0;
 	}
 	.text1 {
 		position: relative;
